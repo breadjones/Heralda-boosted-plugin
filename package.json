@@ -1,0 +1,23 @@
+{
+  "name": "heralda-boosted-plugin",
+  "version": "0.1.0",
+  "description": "A fun plugin for Heralda, where she will now track how \"boosted\" someone is. Did a chat member do something great, terrible, or terribly great? Give them a boost!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "add later"
+  },
+  "keywords": [
+    "heralda-plugin",
+    "heralda",
+    "fun"
+  ],
+  "author": "Brad \"breadjones\" Jones",
+  "license": "MIT",
+  "dependencies": {
+    "heralda-plugin-base": "breadjones/Heralda-plugin-base"
+  }
+}
