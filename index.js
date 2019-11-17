@@ -59,12 +59,12 @@ class BoostedPlugin extends HeraldaPlugin {
   }
 
   _findTheBoostees(message) {
-    if (message.mentions.length === 0) {
+    if (message.mentions.users.length === 0) {
       message.channel.sendMessage("You forgot to @mention someone, so it sounds like you're the boosted one.");
       return [message.author];
     }
 
-    return message.mentions;
+    return message.mentions.users;
   }
 
   _boost(message, boostBy) {
