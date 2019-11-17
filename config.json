@@ -5,6 +5,5 @@
     "tier2": [ "is really boosted", "are really boosted" ],
     "tier3": [ "is so incredibly boosted", "are so incredibly boosted" ]
   },
-  "dbPath": "./heralda_boosted.db",
   "wasJustBoostedMessage": " was just boosted, I'll cut them some slack... for now."
 }

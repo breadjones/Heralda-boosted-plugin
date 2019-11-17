@@ -1,9 +1,8 @@
 var sqlite3 = require('sqlite3').verbose();
-var db;
+var db = new sqlite3.Database('./booster.db');
 
 class Booster {
   init(config) {
-    db = new sqlite3.Database(config.dbPath);
     db.serialize(() => {
         db.run("CREATE TABLE IF NOT EXISTS boosted (id TEXT PRIMARY KEY, username TEXT NOT NULL, boosted_meter INTEGER NOT NULL)");
     });
@@ -64,15 +63,15 @@ class Booster {
   }
 
   _getBoostedRanking(boostedValue) {
-      var message = boostedValue % 100 + "%";
+    var message = boostedValue % 100 + "%";
 
-      if (boostedValue >= 100) {
-          for (var x = boostedValue; x >= 100; x -= 100) {
-              message += " :star:";
-          }
+    if (boostedValue >= 100) {
+      for (var x = boostedValue; x >= 100; x -= 100) {
+        message += " :star:";
       }
+    }
 
-      return message;
+    return message;
   }
 }
 
