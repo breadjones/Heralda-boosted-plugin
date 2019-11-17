@@ -68,7 +68,7 @@ class BoostedPlugin extends HeraldaPlugin {
   }
 
   _boost(message, boostBy = 1) {
-    boostees = this._findTheBoostees(message)
+    let boostees = this._findTheBoostees(message)
 
     boostees.forEach(boostee => {
       if (this.recentlyBoostedUsers.indexOf(boostee.id) !== -1) {
