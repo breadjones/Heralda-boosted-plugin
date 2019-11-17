@@ -70,7 +70,7 @@ class BoostedPlugin extends HeraldaPlugin {
   _boost(message, boostBy) {
     var boostees = this._findTheBoostees(message)
 
-    boostees.forEach(boostee => {
+    for (var boostee in boostees) => {
       if (this.recentlyBoostedUsers.indexOf(boostee.id) !== -1) {
         message.channel.sendMessage(boostee.username + this.config.wasJustBoostedMessage);
         return;
