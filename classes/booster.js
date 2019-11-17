@@ -1,8 +1,9 @@
 var sqlite3 = require('sqlite3').verbose();
-var db = new sqlite3.Database('./booster.db');
+var db;
 
 class Booster {
-  init() {
+  init(config) {
+    db = new sqlite3.Database(config.dbPath);
     db.serialize(() => {
         db.run("CREATE TABLE IF NOT EXISTS boosted (id TEXT PRIMARY KEY, username TEXT NOT NULL, boosted_meter INTEGER NOT NULL)");
     });

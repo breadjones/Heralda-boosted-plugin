@@ -6,7 +6,7 @@ const defaultConfig = require('./config.json');
 class BoostedPlugin extends HeraldaPlugin {
   init(client, config) {
     this.config = HeraldaPlugin.mergeConfigs(config, defaultConfig);
-    this.booster = new Booster();
+    this.booster = new Booster(this.config);
     this._setupCommands();
   }
 

@@ -4,5 +4,6 @@
     "tier1": [ "is boosted" ],
     "tier2": [ "is really boosted" ],
     "tier3": [ "is so incredibly boosted" ]
-  }
+  },
+  "dbPath": "./heralda_boosted.db"
 }
