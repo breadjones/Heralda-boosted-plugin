@@ -77,7 +77,7 @@ class BoostedPlugin extends HeraldaPlugin {
       }
 
       this.recentlyBoostedUsers.push(boostee.id);
-      booster.boost(boostee, newBoostedScore => {
+      this.booster.boost(boostee, newBoostedScore => {
         message.channel.sendMessage("<@!" + boostee.id + "> is now " + newBoostedScore + "% maximum boosted.");
       }, boostBy);
 
