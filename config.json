@@ -1,9 +1,10 @@
 {
   "commands": {
     "list": [ "how boosted are we" ],
-    "tier1": [ "is boosted" ],
-    "tier2": [ "is really boosted" ],
-    "tier3": [ "is so incredibly boosted" ]
+    "tier1": [ "is boosted", "are boosted" ],
+    "tier2": [ "is really boosted", "are really boosted" ],
+    "tier3": [ "is so incredibly boosted", "are so incredibly boosted" ]
   },
-  "dbPath": "./heralda_boosted.db"
+  "dbPath": "./heralda_boosted.db",
+  "wasJustBoostedMessage": " was just boosted, I'll cut them some slack... for now."
 }

@@ -31,7 +31,7 @@ class Booster {
 
         console.log(this);
 
-        messages.push("\n" + displayName + ": " + this._getBoostedRanking(row.boosted_meter));
+        messages.push(displayName + ": " + this._getBoostedRanking(row.boosted_meter));
       }, () => {
           let message = messages.join('\n');
           if (callback) {
