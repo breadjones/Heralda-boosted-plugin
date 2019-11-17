@@ -85,7 +85,7 @@ class BoostedPlugin extends HeraldaPlugin {
         const boosteeIndex = this.recentlyBoostedUsers.indexOf(boostee.id);
           this.recentlyBoostedUsers.splice(boosteeIndex, 1);
       }, 76000);
-    })
+    }
   }
 }
 
